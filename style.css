@@ -1,0 +1,333 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: red;
+}
+
+.hire-me {
+    text-decoration: none;
+    border: 2px solid red;
+    color: red;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hire-me:hover {
+    background: red;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.content h3 {
+    background: red;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.content h1 {
+    font-size: 48px;
+}
+
+.content h1 span {
+    color: red;
+}
+
+.content p {
+    font-size: 16px;
+    max-width: 500px;
+    opacity: 0.7;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    color: white;
+    background: red;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.btn.outline {
+    border: 2px solid red;
+    background: transparent;
+}
+
+.btn.outline:hover {
+    background: red;
+}
+
+/* Social Media Icons Styling */
+.socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+.socials a {
+    font-size: 24px;  /* Adjust icon size */
+    color: #333;  /* Default color */
+    margin: 10px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+}
+
+.socials a:hover {
+    color: #E4405F; /* Change to Instagram color when hovering */
+}
+
+
+
+/* Image */
+.image-container img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+
+/* Skills */
+.skills {
+    text-align: center;
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly; /* Spaces icons evenly */
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    font-size: 50px;
+    max-width: 600px; /* Limits width to avoid excessive spacing */
+    margin: 0 auto; /* Centers the icons */
+    gap: 20px; /* Adds spacing between icons */
+}
+
+.icons i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Colors for each icon */
+.icons i.fa-html5 { color: #e34c26; } /* HTML Orange */
+.icons i.fa-css3-alt { color: #2965f1; } /* CSS Blue */
+.icons i.fa-js { color: #f7df1e; } /* JavaScript Yellow */
+.icons i.fa-python { color: #3776AB; } /* Python Blue */
+
+/* Hover effect */
+.icons i:hover {
+    transform: scale(1.2);
+    color: #ff6600;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-image {
+    width: 80%;  /* Adjust percentage as needed */
+    max-width: 700px;  /* Control max size */
+    height: auto;
+}
+.skills{
+    background-color: black;
+}
+
+.skills .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.skills .content .col-left{
+    position: relative;
+    width: 46%;
+}
+
+.skills .content .col-left .content-title{
+    margin-bottom: 20px;
+}
+
+.skills .content .col-right{
+    position: relative;
+    width: 46%;
+}
+
+.skills .content .col-right .bar{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.skills .content .col-right .bar .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skills .content .col-right .br .info span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .content .col-right .bar .line{
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 2px;
+}
+
+.skills .content .col-right .bar .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.skills .content .col-right .bar .html::before{
+    width: 95%;
+    background-color: #e45126;
+}
+
+.skills .content .col-right .bar .css::before{
+    width: 90%;
+    background-color: #0c73b8;
+}
+
+.skills .content .col-right .bar .javascript::before{
+    width: 80%;
+    background-color: #e3a324;
+}
+
+.skills .content .col-right .bar .python::before{
+    width: 85%;
+    background-color: blue;
+}
+
+.skills .content .col-right .bar .php::before{
+    width: 65%;
+    background-color: #6d7eb8;
+}
+
+/* Services */
+
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.title p{
+    font-size: 1em;
+    width: 80%;
+    text-align: center;
+}
+
+.services .content .card{
+    background-color: #fff;
+    width: 340px;
+    margin: 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    transition: 0.3s linear;
+}
+
+.services .content .card .service-icon{
+    color: #3a6cf4;
+    font-size: 8rem;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.services .content .card .info{
+    text-align: center;
+}
+
+.services .content .card .info h3{
+    color: #3a6cf4;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px;
+    transition: 0.3s linear;
+    
+}
+
+.services .content .card:hover{
+    background-color: #3a6cf4;
+    color: white;
+}
+
+.services .content .card:hover .service-icon,
+.services .content .card:hover .info h3
+{
+    transform: translateY(-10px);
+    color: white;
+}
